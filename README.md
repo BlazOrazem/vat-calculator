@@ -2,9 +2,9 @@
 
 Calculate VAT value based on your amount.
 
-# Options
+# Features
 
 * Set custom VAT value percentage
 * Add VAT to amount
 * Subtract VAT from amount
-* Choose decimal places for the result
+* Change the number of decimal places displayed for the result
