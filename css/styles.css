@@ -58,6 +58,18 @@ header h1 {
     text-align: right;
 }
 
+footer p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #ccc;
+}
+footer p a {
+    color: #fff;
+}
+footer p a:hover {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     header {
         padding-top: 20px;

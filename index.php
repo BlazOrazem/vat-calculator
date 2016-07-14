@@ -73,9 +73,13 @@
                     </div>
                     <label class="control-label text-left col-md-2 col-sm-2 col-xs-2">€</label>
                 </div>
+                <div class="col-xs-12"><hr></div>
             </form>
         </div>
     </div>
+    <footer>
+        <p class="text-center">&copy; <a href="http://www.webarea.eu" target="_blank">Webarea.eu</a> 2016. All right reserved.</p>
+    </footer>
 </div>
 
 <script src="js/vue.js"></script>
