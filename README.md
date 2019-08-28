@@ -1,19 +1,19 @@
 # VAT Calculator
 
-Calculate VAT value based on a given amount.
+Calculate value of VAT based on given amount.
 
 ## Usage
 
 * Set a custom amount
-* Set a VAT value percentage
-* Set the number of decimal places displayed in the result
-* Select "Add VAT" to add VAT to a given amount
-* Select "Subtract VAT" to subtract VAT from a given amount
+* Set the percentage of VAT value
+* Set the number of decimal places shown in the results
+* Select "Add VAT" to add VAT to the amount entered
+* Select "Deduct VAT" to deduct VAT from the amount entered
 
 ## Result
 
-* Calculated VAT value based on given parameters
-* Calculated amount with/without VAT value
+* Calculated value of VAT based on given parameters
+* Amount calculated with/excluding VAT
 
 ## Used dependencies
 
@@ -30,6 +30,6 @@ Blaž Oražem, www.orazem.si
 
 ## License
 
-Vat Calculator is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+VAT Calculator is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 [<img src="https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square" alt="MIT License">](LICENSE)

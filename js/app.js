@@ -18,23 +18,23 @@ new Vue({
 
     computed: {
         resultVat: function() {
-            var amount = parseFloat(this.amount.replace(',','.'));
-            var vat = parseFloat(this.vat.replace(',','.'));
-            var price = 0;
+            let amount = parseFloat(this.amount.replace(',','.'));
+            let vat = parseFloat(this.vat.replace(',','.'));
+            let price = 0;
 
             if (this.operation == 1) {
                 this.state = 'with';
                 price = amount * (vat / 100);
             }
             if (this.operation == 0) {
-                this.state = 'without';
+                this.state = 'excluding';
                 price = amount - (amount * (100 / (100 + vat)));
             }
 
             return parseFloat(price).toFixed(this.decimals);
         },
         resultAmount: function() {
-            var result = 0;
+            let result = 0;
 
             if (this.operation == 1) {
                 result = parseFloat(this.amount) + parseFloat(this.resultVat);
