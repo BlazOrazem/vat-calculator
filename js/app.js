@@ -39,6 +39,7 @@ new Vue({
             if (this.operation == 1) {
                 result = parseFloat(this.amount) + parseFloat(this.resultVat);
             }
+
             if (this.operation == 0) {
                 result = parseFloat(this.amount) - parseFloat(this.resultVat);
             }

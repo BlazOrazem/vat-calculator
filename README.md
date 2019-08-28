@@ -17,8 +17,9 @@ Calculate value of VAT based on given amount.
 
 ## Used dependencies
 
-* Bootstrap 4, https://getbootstrap.com/
-* Vue.js 2, https://vuejs.org/
+* Bootstrap 4, https://getbootstrap.com
+* jQuery 3, https://jquery.com
+* Vue.js 2, https://vuejs.org
 
 ## Demo
 
