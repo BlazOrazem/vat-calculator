@@ -1,18 +1,18 @@
 # VAT Calculator
 
-Calculate value of VAT based on given amount.
+Calculate VAT value based on a given amount.
 
 ## Usage
 
 * Set a custom amount
-* Set the percentage of VAT value
-* Set the number of decimal places shown in the results
+* Set the percentage of the VAT value
+* Set the number of decimal places displayed in the result
 * Select "Add VAT" to add VAT to the amount entered
 * Select "Deduct VAT" to deduct VAT from the amount entered
 
 ## Result
 
-* Calculated value of VAT based on given parameters
+* Calculated VAT value based on given parameters
 * Amount calculated with/excluding VAT
 
 ## Used dependencies
