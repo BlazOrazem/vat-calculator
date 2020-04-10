@@ -1,3 +1,7 @@
+<?php
+    $userData = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+    $currency = $userData['geoplugin_currencySymbol'] ?? '€';
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -27,7 +31,7 @@
 <div id="vat" class="container">
     <div class="row justify-content-lg-center pt-2">
         <div class="col col-lg-2">
-            <label for="inputAmount" class="control-label font-weight-bold">Amount (€)</label>
+            <label for="inputAmount" class="control-label font-weight-bold">Amount (<?= $currency ?>)</label>
             <input type="text" class="form-control" id="inputAmount" v-model="amount">
         </div>
         <div class="col col-lg-2">
@@ -63,7 +67,7 @@
                 <div class="col-4">
                     <input type="text" class="form-control text-right" id="inputCalculatedVat" v-model="resultVat" readonly>
                 </div>
-                <label class="col-2 col-form-label font-weight-bold">€</label>
+                <label class="col-2 col-form-label font-weight-bold"><?= $currency ?></label>
             </div>
             <div class="form-group row mb-3">
                 <label for="inputCalculatedAmount" class="col-6 col-form-label text-right font-weight-bold">
@@ -72,7 +76,7 @@
                 <div class="col-4">
                     <input type="text" class="form-control text-right" id="inputCalculatedAmount" v-model="resultAmount" readonly>
                 </div>
-                <label class="col-2 col-form-label font-weight-bold">€</label>
+                <label class="col-2 col-form-label font-weight-bold"><?= $currency ?></label>
             </div>
         </div>
     </div>
